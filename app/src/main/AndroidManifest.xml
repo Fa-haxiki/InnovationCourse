@@ -20,6 +20,8 @@
         <activity
             android:name=".TeacherDetail"
             android:label="@string/title_activity_teacher_detail"></activity>
+        <activity android:name=".AllTabhost"/>
+
     </application>
 
 </manifest>
