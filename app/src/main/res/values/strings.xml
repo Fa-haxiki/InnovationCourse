@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">信息工程学院</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_teacher_detail">详细信息</string>
+</resources>
