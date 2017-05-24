@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
 import android.widget.TabHost;
 
 public class MainActivity extends TabActivity {
@@ -19,20 +18,16 @@ public class MainActivity extends TabActivity {
         mTabHost.addTab(mTabHost.newTabSpec("新闻").setIndicator(
                 "新闻",
                 getResources().getDrawable(android.R.drawable.arrow_down_float)).setContent(
-                new Intent(this, AllTabhost.class)));
+                new Intent(this, xinwen.class)));
         mTabHost.addTab(mTabHost.newTabSpec("活动").setIndicator(
                 "活动",
                 getResources().getDrawable(android.R.drawable.arrow_down_float)).setContent(
-                new Intent(this, AllTabhost.class)));
+                new Intent(this, huodong.class)));
         mTabHost.addTab(mTabHost.newTabSpec("简介").setIndicator(
                 "简介",
                 getResources().getDrawable(android.R.drawable.arrow_down_float)).setContent(
-                new Intent(this, AllTabhost.class)));
-        TeacherAdapter teacherAdapter = new TeacherAdapter(this, R.layout.teacher_item, Teacher.getAllTeachers());
+                new Intent(this, jianjie.class)));
 
-        ListView listView = (ListView) findViewById(R.id.xinwen_listView);
-
-        listView.setAdapter(teacherAdapter);
     }
 
     @Override
