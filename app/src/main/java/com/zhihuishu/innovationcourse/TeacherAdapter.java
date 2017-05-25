@@ -11,9 +11,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by yw on 16/2/17.
- */
 public class TeacherAdapter extends ArrayAdapter<Teacher> {
 
     public TeacherAdapter(Context context, int resource, List<Teacher> objects) {

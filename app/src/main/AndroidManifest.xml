@@ -23,7 +23,6 @@
         <activity android:name=".huodong"/>
         <activity android:name=".jianjie"/>
         <activity android:name=".LoopActivity"/>
-
     </application>
 
 </manifest>

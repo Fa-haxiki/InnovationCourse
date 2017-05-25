@@ -3,9 +3,6 @@ package com.zhihuishu.innovationcourse;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by yw on 16/2/17.
- */
 public class Teacher {
 
     private String name;
