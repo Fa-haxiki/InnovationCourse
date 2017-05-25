@@ -1,28 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
-         android:id="@android:id/tabhost"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TabHost
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@android:id/tabhost"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-        <TabWidget android:id="@android:id/tabs"
-                   android:layout_width="fill_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="left"/>
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
 
-        <FrameLayout android:id="@android:id/tabcontent"
-                     android:layout_weight="1"
-                     android:layout_width="fill_parent"
-                     android:layout_height="fill_parent">
+            <FrameLayout android:id="@android:id/tabcontent"
+                         android:layout_weight="1"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent">
+                <com.jude.rollviewpager.RollPagerView
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:rollviewpager_play_delay="3000"/>
+            </FrameLayout>
 
-        </FrameLayout>
+        </LinearLayout>
 
-    </LinearLayout>
+    </TabHost>
 
-</TabHost>
+</LinearLayout>
+
 
 
 

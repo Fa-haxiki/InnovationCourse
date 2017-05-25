@@ -18,7 +18,7 @@ public class MainActivity extends TabActivity {
         mTabHost.addTab(mTabHost.newTabSpec("新闻").setIndicator(
                 "新闻",
                 getResources().getDrawable(android.R.drawable.arrow_down_float)).setContent(
-                new Intent(this, xinwen.class)));
+                new Intent(this, LoopActivity.class)));
         mTabHost.addTab(mTabHost.newTabSpec("活动").setIndicator(
                 "活动",
                 getResources().getDrawable(android.R.drawable.arrow_down_float)).setContent(

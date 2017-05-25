@@ -20,9 +20,9 @@
         <activity
             android:name=".TeacherDetail"
             android:label="@string/title_activity_teacher_detail"></activity>
-        <activity android:name=".xinwen"/>
         <activity android:name=".huodong"/>
         <activity android:name=".jianjie"/>
+        <activity android:name=".LoopActivity"/>
 
     </application>
 
